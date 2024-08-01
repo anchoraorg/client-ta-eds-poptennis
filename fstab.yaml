@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p119552-e1404655.adobeaemcloud.com/bin/franklin.delivery/poptennis/client-ta-eds-poptennis/main"
+    url: "https://author-p119552-e1404655.adobeaemcloud.com/bin/franklin.delivery/anchoraorg/client-ta-eds-poptennis/main"
     type: "markup"
     suffix: ".html"
