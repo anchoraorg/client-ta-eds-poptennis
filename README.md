@@ -185,3 +185,9 @@ When updating fields in `component-models.json` you can add `value` to define th
         "valueType": "string"
       },
 ```
+
+### Previewing Chaanges in a Branch
+
+When you create a new branch in the repository, you can preview the changes in the branch by adding the branch name to the preview URL.
+
+Branch Preview URL Format: `https://<branch-name>--client-ta-eds-poptennis--anchoraorg.hlx.page/`
