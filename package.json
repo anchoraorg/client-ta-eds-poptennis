@@ -6,7 +6,8 @@
   "scripts": {
     "lint:js": "eslint . --ext .json,.js",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "start": "aem up"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
+    "@adobe/aem-cli": "^16.5.15",
     "@babel/eslint-parser": "7.24.1",
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
