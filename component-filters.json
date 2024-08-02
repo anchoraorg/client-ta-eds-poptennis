@@ -31,7 +31,8 @@
       "columns",
       "fragment",
       "teaser",
-      "embed"
+      "embed",
+      "accordion"
     ]
   },
   {
@@ -39,5 +40,9 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "accordion",
+    "components": ["accordion-item"]
   }
 ]
