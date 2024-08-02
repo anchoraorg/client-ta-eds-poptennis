@@ -15,7 +15,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "embed"
     ]
   },
   {
@@ -29,7 +30,8 @@
       "cards",
       "columns",
       "fragment",
-      "teaser"
+      "teaser",
+      "embed"
     ]
   },
   {
