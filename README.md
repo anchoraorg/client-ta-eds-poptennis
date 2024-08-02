@@ -191,3 +191,9 @@ When updating fields in `component-models.json` you can add `value` to define th
 When you create a new branch in the repository, you can preview the changes in the branch by adding the branch name to the preview URL.
 
 Branch Preview URL Format: `https://<branch-name>--client-ta-eds-poptennis--anchoraorg.hlx.page/`
+
+### Using Icons
+
+You can create new ions in `/icons` directory and use them in the components.
+
+To use the in components you can use the following syntax `:<icon-file-name>:` in the text fields, do not include the file extension, just use the name.
