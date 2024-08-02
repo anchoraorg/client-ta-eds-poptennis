@@ -552,6 +552,284 @@
             }
         }
       ]
+    },
+    {
+      "title": "Form Core Components",
+      "id": "form-basic",
+      "components": [
+        {
+            "title": "Button",
+            "id": "form-basic-button",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/wcm/components/form/button/v2/button",
+                        "template": {
+                            "jcr:title": "Button",
+                            "fieldType": "button",
+                            "type": "button",
+                            "enabled": true,
+                            "visible": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+          "title": "Reset",
+          "id": "form-basic-button-reset",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/button/v2/button",
+                      "template": {
+                          "jcr:title": "Reset",
+                          "type": "reset",
+                          "fieldType": "button",
+                          "name": "reset",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Submit",
+          "id": "form-basic-button-submit",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/button/v2/button",
+                      "template": {
+                          "jcr:title": "Submit",
+                          "type": "submit",
+                          "fieldType": "button",
+                          "name": "submit",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+            "title": "Checkbox",
+            "id": "form-basic-checkbox",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/wcm/components/form/options/v2/options",
+                        "template": {
+                            "jcr:title": "Checkbox",
+                            "fieldType": "checkbox",
+                            "type": "checkbox",
+                            "enabled": true,
+                            "visible": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Dropdown List",
+            "id": "form-basic-drop-down",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/wcm/components/form/options/v2/options",
+                        "template": {
+                            "jcr:title": "Drop Down List",
+                            "fieldType": "drop-down",
+                            "type": "drop-down",
+                            "enabled": true,
+                            "visible": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+          "title": "Multi Dropdown List",
+          "id": "form-basic-drop-down",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/options/v2/options",
+                      "template": {
+                          "jcr:title": "Multi Drop Down List",
+                          "fieldType": "multi-drop-down",
+                          "type": "multi-drop-down",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+      },        {
+          "title": "Radio Group",
+          "id": "form-basic-radio-group",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/options/v2/options",
+                      "template": {
+                          "jcr:title": "Radio Group",
+                          "fieldType": "radio-group",
+                          "type": "drop-down",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Text",
+          "id": "form-basic-text-input",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Text",
+                          "fieldType": "textinput",
+                          "type": "text",
+                          "visible": true,
+                          "textIsRich": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Text Input",
+          "id": "form-basic-text-area",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Text Area",
+                          "fieldType": "textarea",
+                          "type": "textarea",
+                          "rows": 4,
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+          },
+          {
+            "title": "Email",
+            "id": "form-basic-text-email",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/wcm/components/form/text/v2/text",
+                        "template": {
+                            "jcr:title": "Email Input",
+                            "fieldType": "email",
+                            "type": "email",
+                            "enabled": true,
+                            "visible": true
+                        }
+                    }
+                }
+            }
+          },        
+          {
+            "title": "Telephone",
+            "id": "form-basic-text-tel",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/wcm/components/form/text/v2/text",
+                        "template": {
+                            "jcr:title": "Phone Input",
+                            "fieldType": "tel",
+                            "type": "tel",
+                            "enabled": true,
+                            "visible": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+          "title": "Date",
+          "id": "form-basic-text-date",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Date Input",
+                          "fieldType": "date",
+                          "type": "date",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Time",
+          "id": "form-basic-text-time",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Time Input",
+                          "fieldType": "time",
+                          "type": "time",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Number",
+          "id": "form-basic-text-number",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Number Input",
+                          "fieldType": "number",
+                          "type": "number",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        },
+        {
+          "title": "Password",
+          "id": "form-basic-text-password",
+          "plugins": {
+              "xwalk": {
+                  "page": {
+                      "resourceType": "core/wcm/components/form/text/v2/text",
+                      "template": {
+                          "jcr:title": "Password Input",
+                          "fieldType": "password",
+                          "type": "password",
+                          "enabled": true,
+                          "visible": true
+                      }
+                  }
+              }
+          }
+        }
+      ]
     }
   ]
 }
