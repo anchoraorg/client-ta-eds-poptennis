@@ -170,8 +170,6 @@ When creating fields in `component-models.json` you can add prefix `foreground_`
       },
 ```
 
-
-
 ### Default values for Component Template
 
 By default component template will have empty values for the fields, and it will be hard to find on the page. You can add default values for the fields in the component model.
