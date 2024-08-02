@@ -254,6 +254,13 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "button",
+        "name": "link",
+        "value": "",
+        "label": "Link",
+        "valueType": "string"
       }
     ]
   }
