@@ -257,7 +257,7 @@
       },
       {
         "component": "button",
-        "name": "link",
+        "name": "foreground_link",
         "value": "",
         "label": "Link",
         "valueType": "string"
