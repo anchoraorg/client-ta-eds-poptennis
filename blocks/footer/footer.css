@@ -12,3 +12,15 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .toprow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .bottomrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

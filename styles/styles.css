@@ -1,26 +1,14 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
-
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  --link-color: #0066cc;
+  --link-hover-color: #005bb5;
+  --background-color: #ffffff;
+  --light-color: #0057b8;
+  --dark-color: #333;
+  --text-color: #333333;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'Archivo', sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -42,13 +30,32 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
+  font-family: 'Roboto-Fallback';
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@font-face {
+  font-family: 'Macho';
+  font-weight: 700;
+  src: url('../fonts/MachoBold.woff2') format('woff2'), url('../fonts/MachoBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Macho';
+  font-weight: 500;
+  src: url('../fonts/MachoSemiBold.woff2') format('woff2'), url('../fonts/MachoSemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Macho';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/MachoBoldItalic.woff2') format('woff2'), url('../fonts/MachoBoldItalic.woff') format('woff');
+}
+
+@media (min-width: 900px) {
   :root {
     --heading-font-size-xxl: 60px;
     --heading-font-size-xl: 48px;
@@ -123,7 +130,7 @@ pre {
 }
 
 main pre {
-  background-color: var(--light-color);
+  background-color: #f5f5f5;
   padding: 1em;
   border-radius: 0.25em;
   overflow-x: auto;
@@ -154,8 +161,8 @@ button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: #ffffff;
+  background-color: #0073e6;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -206,13 +213,13 @@ main .section {
   padding: 64px 16px;
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
   .section > div {
     max-width: 1200px;
     margin: auto;
