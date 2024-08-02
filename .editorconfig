@@ -1,0 +1,39 @@
+# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Set default charset to UTF-8
+[*]
+charset = utf-8
+
+# Indentation settings
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+# End of line settings
+[*.{js,py}]
+end_of_line = lf
+
+# Trim trailing whitespace
+[*.{js,py}]
+trim_trailing_whitespace = true
+
+# Insert final newline
+[*.{js,py}]
+insert_final_newline = true
+
+# Set tab width to 4 for Makefile
+[Makefile]
+indent_style = tab
+tab_width = 4
+
+# Set tab width to 2 for Markdown files
+[*.md]
+indent_style = space
+indent_size = 2
