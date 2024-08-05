@@ -2825,5 +2825,52 @@
         "label": "Form Path"
       }
     ]
+  },
+  {
+    "id": "forms-block-getintouch",
+    "fields": [
+      {
+        "component": "form-basic-text-input",
+        "label": "First Name",
+        "name": "firstname",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-input",
+        "label": "Last Name",
+        "name": "lastname",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-email",
+        "label": "Email Address",
+        "name": "email",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-input",
+        "label": "Reason for enquiry",
+        "name": "reason",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-input",
+        "label": "Country",
+        "name": "country",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-input",
+        "label": "Type your enquiry here",
+        "name": "enquiry",
+        "valueType": "string"
+      },
+      {
+        "component": "form-basic-text-input",
+        "label": "Submit",
+        "name": "submit",
+        "valueType": "string"
+      }
+    ]
   }
 ]
