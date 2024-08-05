@@ -203,3 +203,6 @@ To use the in components you can use the following syntax `:<icon-file-name>:` i
 - [https://github.com/hlxsites] - reference sites made for EDS
 - [https://github.com/adobe-rnd] - other examples and derivites of the EDS
 - [https://github.com/adobe/helix-website] - Helix Website, sample components
+- [https://github.com/hlxsites/petplace.git] - Workers.
+- [https://github.com/hlxsites/tlcgrp/blob/main/blocks/form/form.js] - Workers and recaptcha.
+- [https://github.com/hlxsites/sazerac-99brandparty.git] - Form and email sending using adobe IO mailgun function.
