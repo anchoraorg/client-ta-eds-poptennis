@@ -334,6 +334,25 @@
     ]
   },
   {
+    "id": "form-basic",
+    "fields": [
+      {
+        "component": "text",
+        "name": "action",
+        "value": "",
+        "label": "Action URL",
+        "valueType": "string"
+      },
+      {
+        "component": "boolean",
+        "name": "recaptcha",
+        "label": "Recaptcha validation?",
+        "valueType": "boolean",
+        "value": true
+      }
+    ]
+  },
+  {
     "id": "forms-block-getintouch",
     "fields": [
       {
