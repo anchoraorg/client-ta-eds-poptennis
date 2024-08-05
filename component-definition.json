@@ -226,7 +226,7 @@
         },
         {
           "title": "Form",
-          "id": "form-basic",
+          "id": "form",
           "plugins": {
             "xwalk": {
               "page": {
