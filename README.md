@@ -200,5 +200,6 @@ To use the in components you can use the following syntax `:<icon-file-name>:` i
 
 ### Refereces
 
-- [https://github.com/hlxsites]
-- [https://github.com/adobe-rnd]
+- [https://github.com/hlxsites] - reference sites made for EDS
+- [https://github.com/adobe-rnd] - other examples and derivites of the EDS
+- [https://github.com/adobe/helix-website] - Helix Website, sample components
