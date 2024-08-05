@@ -254,13 +254,6 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
-      },
-      {
-        "component": "button",
-        "name": "foreground_link",
-        "value": "",
-        "label": "Link",
-        "valueType": "string"
       }
     ]
   },
