@@ -33,8 +33,7 @@
       "teaser",
       "embed",
       "accordion",
-      "form",
-      "form-embed",
+      "form-basic",
       "forms-block-getintouch"
     ]
   },
@@ -47,28 +46,7 @@
   {
     "id": "accordion",
     "components": ["accordion-item"]
-  },
-  {
-    "id": "form",
-    "components": [
-      "checkbox",
-      "date-input",
-      "drop-down",
-      "email",
-      "file-input",
-      "form-button",
-      "form-fragment",
-      "form-image",
-      "form-reset-button",
-      "form-submit-button",
-      "number-input",
-      "panel",
-      "plain-text",
-      "radio-group",
-      "text-input",
-      "wizard"
-    ]
-  },
+  },  
   {
     "id": "form-basic",
     "components": [
