@@ -140,6 +140,29 @@ const createSubmit = (fd) => {
   return { field: button, fieldWrapper };
 };
 
+const createButton = (fd) => {
+  const button = document.createElement('button');
+  button.textContent = fd.Label || fd.Name;
+  button.type = 'button';
+  button.classList.add('button');
+
+  const fieldWrapper = createFieldWrapper(fd);
+  fieldWrapper.append(button);
+  return { field: button, fieldWrapper };
+};
+
+const createReset = (fd) => {
+  const button = document.createElement('button');
+  button.textContent = fd.Label || fd.Name;
+  button.type = 'reset';
+
+  button.classList.add('button');
+
+  const fieldWrapper = createFieldWrapper(fd);
+  fieldWrapper.append(button);
+  return { field: button, fieldWrapper };
+};
+
 const createTextArea = (fd) => {
   const field = document.createElement('textarea');
   setCommonAttributes(field, fd);
@@ -253,14 +276,20 @@ const FIELD_CREATOR_FUNCTIONS = {
   select: createSelect,
   heading: createHeading,
   plaintext: createPlaintext,
-  'text-area': createTextArea,
+  textarea: createTextArea,
   toggle: createToggle,
   submit: createSubmit,
+  reset: createReset,
+  button: createButton,
   confirmation: createConfirmation,
   fieldset: createFieldset,
   checkbox: createCheckbox,
   radio: createRadio,
   tel: createTel,
+  email: createInput,
+  date: createInput,
+  time: createInput,
+  number: createInput,
 };
 
 export default async function createField(fd, form) {
