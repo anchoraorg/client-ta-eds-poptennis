@@ -1,14 +1,4 @@
-import { toClassName } from '../../scripts/aem.js';
-
-function createFieldWrapper(fd) {
-  const fieldWrapper = document.createElement('div');
-  if (fd.Style) fieldWrapper.className = fd.Style;
-  fieldWrapper.classList.add('field-wrapper', `${fd.Type}-wrapper`);
-
-  fieldWrapper.dataset.fieldset = fd.Fieldset;
-
-  return fieldWrapper;
-}
+import { toClassName, loadCSS, loadScript } from '../../scripts/aem.js';
 
 const ids = [];
 function generateFieldId(fd, suffix = '') {
@@ -17,6 +7,20 @@ function generateFieldId(fd, suffix = '') {
   const idSuffix = ids[slug] ? `-${ids[slug]}` : '';
   ids[slug] += 1;
   return `${slug}${idSuffix}`;
+}
+
+function createFieldWrapper(fd) {
+  const fieldWrapper = document.createElement('div');
+  if (fd.Style) {
+    fieldWrapper.className = fd.Style;
+  }
+  fieldWrapper.classList.add('field-wrapper', `${fd.Type}-wrapper`);
+
+  fieldWrapper.id = generateFieldId(fd, `-wrapper${fd.Style}`);
+
+  fieldWrapper.dataset.fieldset = fd.Fieldset;
+
+  return fieldWrapper;
 }
 
 function createLabel(fd) {
@@ -36,6 +40,7 @@ function setCommonAttributes(field, fd) {
   field.required = fd.Mandatory && (fd.Mandatory.toLowerCase() === 'true' || fd.Mandatory.toLowerCase() === 'x');
   field.placeholder = fd.Placeholder;
   field.value = fd.Value;
+  field.maxlength = fd.maxLength;
 }
 
 const createHeading = (fd) => {
@@ -120,8 +125,15 @@ const createConfirmation = (fd, form) => {
 const createSubmit = (fd) => {
   const button = document.createElement('button');
   button.textContent = fd.Label || fd.Name;
-  button.classList.add('button');
   button.type = 'submit';
+
+  if (fd.Recaptcha === 'true' || fd.recaptcha === 'true') {
+    button.classList.add('button', 'g-recaptcha');
+    button.dataset.sitekey = fd.SITEKEY || fd.sitekey;
+    button.dataset.redirect = fd.Extra || '';
+  } else {
+    button.classList.add('button');
+  }
 
   const fieldWrapper = createFieldWrapper(fd);
   fieldWrapper.append(button);
@@ -213,6 +225,30 @@ const createRadio = (fd) => {
   return { field, fieldWrapper };
 };
 
+function createTel(fd) {
+  const tel = createInput(fd);
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        loadCSS('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css');
+        loadScript(
+          'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js',
+          () => {
+            window.intlTelInput(tel, {
+              preferredCountries: ['in'],
+              utilsScript:
+                'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
+            });
+          },
+        );
+        obs.disconnect();
+      }
+    });
+  });
+  obs.observe(tel);
+  return tel;
+}
+
 const FIELD_CREATOR_FUNCTIONS = {
   select: createSelect,
   heading: createHeading,
@@ -224,6 +260,7 @@ const FIELD_CREATOR_FUNCTIONS = {
   fieldset: createFieldset,
   checkbox: createCheckbox,
   radio: createRadio,
+  tel: createTel,
 };
 
 export default async function createField(fd, form) {
