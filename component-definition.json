@@ -615,7 +615,7 @@
         },
         {
             "title": "Checkbox",
-            "id": "form-basic-checkbox",
+            "id": "form-basic-options-checkbox",
             "plugins": {
                 "xwalk": {
                     "page": {
@@ -633,7 +633,7 @@
         },
         {
             "title": "Dropdown List",
-            "id": "form-basic-drop-down",
+            "id": "form-basic-options-dropdown",
             "plugins": {
                 "xwalk": {
                     "page": {
@@ -651,7 +651,7 @@
         },
         {
           "title": "Multi Dropdown List",
-          "id": "form-basic-drop-down",
+          "id": "form-basic-options-multidropdown",
           "plugins": {
               "xwalk": {
                   "page": {
@@ -668,7 +668,7 @@
           }
       },        {
           "title": "Radio Group",
-          "id": "form-basic-radio-group",
+          "id": "form-basic-options-radio",
           "plugins": {
               "xwalk": {
                   "page": {

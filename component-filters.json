@@ -67,5 +67,25 @@
       "text-input",
       "wizard"
     ]
+  },
+  {
+    "id": "form-basic",
+    "components": [
+      "form-basic-button",
+      "form-basic-button-reset",
+      "form-basic-button-submit",
+      "form-basic-options-checkbox",
+      "form-basic-options-dropdown",
+      "form-basic-options-multidropdown",
+      "form-basic-options-radio",
+      "form-basic-text-input",
+      "form-basic-text-area",
+      "form-basic-text-email",
+      "form-basic-text-tel",
+      "form-basic-text-date",
+      "form-basic-text-time",
+      "form-basic-text-number",
+      "form-basic-text-password"
+    ]
   }
 ]
