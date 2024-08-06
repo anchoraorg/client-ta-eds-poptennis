@@ -77,6 +77,11 @@ body {
   display: none;
   padding-top: var(--nav-height);
 }
+@media (width <= 900px) {
+  body {
+    padding-top: 75px;
+  }
+}
 
 body.appear {
   display: block;

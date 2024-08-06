@@ -1,65 +1,153 @@
-
 /* header */
 
 header {
-    position: fixed;
-    height: var(--nav-height);
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: all .3s ease;
-    z-index: 1000;
-    background-color: #FF5629;
+  position: fixed;
+  height: var(--nav-height);
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background-color: #ff5629;
+}
+
+/* update size on mobile */
+@media (width <= 900px) {
+  header {
+    height: 75px;
   }
-  
   header .nav-wrapper {
-    padding-right: 28px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1440px;
+    /* max-width: 650px; */
+    /* padding-left: 25px !important; */
+    /* padding-right: 25px !important; */
+    /* margin-top: 75px; */
   }
-  
-  header .default-content-wrapper {
-    width: 171px;
-  }
-  
-  header nav .nav-brand img {
-    width: 100%;
-  }
-  
-  header nav .nav-sections {
-    padding: 0;
-    font-weight: 700;
-    color: #E6FF00;
-    font-size: 16px;
-    line-height: 110px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
+}
+
+header .nav-wrapper {
+  /* padding-right: 28px; */
+  /* padding-left: 25px; */
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+
+header.header-wrapper {
+  /* padding-right: 25px; */
+  /* padding-left: 25px; */
+  max-width: 100%;
+}
+
+header.header-wrapper .header.block {
+  height: 100%;
+  width: 100%;
+  /* padding-right: 25px; */
+  /* padding-left: 25px; */
+}
+
+header .default-content-wrapper {
+  width: 171px;
+  display: contents;
+
+}
+
+header nav .nav-brand img {
+  width: 100%;
+}
+
+header nav .nav-sections {
+  display: contents;
+  padding: 0;
+  font-weight: 700;
+  color: #e6ff00;
+  font-size: 16px;
+  line-height: 110px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex !important;
+  /* flex-direction: row-reverse !important; */
+  justify-content: space-between;
+  width: 100% !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+@media (width <= 900px) {
   header nav {
-    display: flex !important;
     flex-direction: row-reverse !important;
-    justify-content: space-between;
-  }
-  
-  
-  header nav .nav-sections a {
-    display: block;
-    padding: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 110px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .5s ease;
-    color: #EA2D52;
-    background-color: transparent;
-  
+    height: 75px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    width: 100% !important;
   }
 
-  header nav .nav-sections a:hover {
-    color: #001F3D;
+  header nav .nav-brand img {
+    width: 85.5px;
   }
-  
+}
+
+header nav .nav-hamburger {
+  grid-area: hamburger;
+  width: fit-content;
+  width: 25px;
+  height: 20px;
+  z-index: 250;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+header nav[aria-expanded="false"] .nav-hamburger-icon,
+header nav[aria-expanded="false"] .nav-hamburger-icon::before,
+header nav[aria-expanded="false"] .nav-hamburger-icon::after {
+  background-color: #e6ff00 !important;
+  width: 25px;
+  height: 20px;
+}
+
+header nav .nav-sections a {
+  display: block;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #ea2d52;
+  background-color: transparent;
+}
+
+header nav .nav-sections a:hover {
+  color: #001f3d;
+}
+
+header nav ul:first-child {
+  align-items: end;  
+}
+
+/* hide last list in sections to show on mobile only */
+header nav ul:last-child {
+  display: none !important;
+}
+
+@media (width <= 900px) {
+  header nav ul:last-child {
+    display: block !important;
+  }
+}
+
+header nav[aria-expanded='true'] {
+  display: grid;
+  grid-template:
+    'hamburger brand' var(--nav-height)
+    'sections sections' 1fr
+    'tools tools' var(--nav-height) / auto 1fr;
+  overflow-y: auto;
+  min-height: 100vh;
+}
