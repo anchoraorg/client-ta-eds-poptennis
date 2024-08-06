@@ -1,0 +1,21 @@
+
+/* section common */
+
+/* remove all section image effects */
+@media (width <= 900px) {
+  main *::after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+  }  
+
+  main *::before {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+    background-color: unset !important;
+  }
+}
+

@@ -6,10 +6,11 @@
   --light-color: #B5D3E4;
   --dark-color: #003953;
   --text-color: #003953;
+  --button-color: #E6FF00;
 
   /* fonts */
   --body-font-family: 'Archivo', sans-serif;
-  --heading-font-family: 'Macho', sans-serif;
+  --heading-font-family: 'Archivo', sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -26,7 +27,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 110px;
 }
 
 @font-face {
@@ -58,7 +59,7 @@
 @media (width >= 900px) {
   :root {
     --heading-font-size-xxl: 70px;
-    --heading-font-size-xl: 42px;
+    --heading-font-size-xl: calc(32px + 48*((100vw - 1009px) / 431));
     --heading-font-size-l: 38px;
     --heading-font-size-m: 30px;
     --heading-font-size-s: 22px;
@@ -74,6 +75,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  padding-top: var(--nav-height);
 }
 
 body.appear {
@@ -90,20 +92,69 @@ h3,
 h4,
 h5,
 h6 {
+  color: #E6FF00;
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1.25;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 0;
+  margin-bottom: 16px;
   scroll-margin: calc(var(--nav-height) + 1em);
+  text-transform: uppercase;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  color: var(--link-color);
+}
+
+
+h1 { 
+  font-size: var(--heading-font-size-xxl); 
+}
+
+h2 { 
+  font-size: var(--heading-font-size-xxl); 
+  margin-bottom: 20px;
+  font-weight: 700;
+  max-width: 370px;
+  text-transform: uppercase;
+  color: #E6FF00;
+  line-height: 0.9;
+}
 h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
+
+h4 { 
+  color: #fff;
+  text-transform: none;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+
+/* subtitle */
+h6 { 
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: none;
+}
+
+@media (width <= 900px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+}
+
 
 p,
 dl,
@@ -113,6 +164,13 @@ pre,
 blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #fff;
 }
 
 code,
@@ -152,29 +210,28 @@ a:hover {
 a.button:any-link,
 button {
   font-family: var(--body-font-family);
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  color: #fff; /* $color-white */
-  background-color: #EA2D52; /* $color-primary */
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  background-color: rgb(0 31 61);
+  color: #fff !important;
+  border: 0;
+  font-size: 18px;
   border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 350ms ease;
+  text-align: center;
+  cursor: pointer;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--button-color);
+  color: #001F3D !important;
   cursor: pointer;
 }
 
@@ -186,9 +243,14 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
+  background-color: #001F3D;
   color: var(--text-color);
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--button-color);
+  color: #001F3D !important;
 }
 
 main img {
@@ -215,7 +277,25 @@ main .section {
 
 @media (width >= 600px) {
   main .section {
-    padding: 64px 32px;
+    /* padding: 64px 32px; */
+  }
+}
+
+@media (width <= 600px) {
+  main .section .columns-wrapper {
+      max-width: 650px;
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+}
+
+@media (width >= 600px) {
+  main .section .columns-wrapper {
+    padding-right: 60px;
+      padding-left: 60px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1440px;
   }
 }
 

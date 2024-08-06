@@ -1,0 +1,9 @@
+
+/* section popular */
+main .section.popular {
+  /* padding: 0; */
+}
+
+main .section.popular h3 {
+  text-transform: none;
+}

@@ -7,6 +7,7 @@
     "lint:js": "eslint . --ext .json,.js",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
+    "lintfix": "stylelint blocks/**/*.css styles/*.css --fix",
     "start": "aem up"
   },
   "repository": {

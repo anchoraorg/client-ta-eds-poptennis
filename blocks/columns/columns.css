@@ -1,10 +1,10 @@
 .columns > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .columns img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .columns > div > div {
@@ -16,7 +16,7 @@
 }
 
 .columns > div > .columns-img-col img {
-  display: block;
+  /* display: block; */
 }
 
 @media (width >= 900px) {
@@ -31,3 +31,4 @@
     order: unset;
   }
 }
+

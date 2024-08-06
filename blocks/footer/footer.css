@@ -1,7 +1,12 @@
 footer {
-  padding: 2rem;
-  background-color: var(--light-color);
+  /* background-color: var(--light-color); */
   font-size: var(--body-font-size-s);
+  background-color: #E6FF00;
+  color: #001F3D;
+  padding: 60px 0;
+  position: relative;
+  z-index: 10;
+  width: 100%;
 }
 
 footer .footer {
@@ -24,3 +29,15 @@ footer .bottomrow {
   justify-content: space-between;
   align-items: center;
 }
+
+footer .footer.block {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+
+
+
