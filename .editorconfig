@@ -37,3 +37,8 @@ tab_width = 4
 [*.md]
 indent_style = space
 indent_size = 2
+
+# Set tabs for css
+[*.css]
+indent_style = space
+indent_size = 2
