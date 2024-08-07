@@ -275,6 +275,23 @@
     ]
   },
   {
+    "id": "video",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "videourl",
+        "label": "videourl"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "thumbnail",
+        "label": "thumbnail"
+      }
+    ]
+  },
+  {
     "id": "accordion",
     "fields": []
   },
