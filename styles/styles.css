@@ -60,7 +60,7 @@
   :root {
     --heading-font-size-xxl: 70px;
     --heading-font-size-xl: calc(32px + 48*((100vw - 1009px) / 431));
-    --heading-font-size-l: 38px;
+    --heading-font-size-l: 42px;
     --heading-font-size-m: 30px;
     --heading-font-size-s: 22px;
     --heading-font-size-xs: 18px;
@@ -71,7 +71,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
@@ -100,7 +100,7 @@ h6 {
   color: #E6FF00;
   font-family: var(--heading-font-family);
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 16px;
   scroll-margin: calc(var(--nav-height) + 1em);
@@ -132,12 +132,12 @@ h2 {
 }
 h3 { font-size: var(--heading-font-size-l); }
 
-h4 { 
+h4 {
   color: #fff;
   text-transform: none;
   line-height: 1.2;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 h5 { font-size: var(--heading-font-size-s); }

@@ -9,6 +9,7 @@ header {
   transition: all 0.3s ease;
   z-index: 1000;
   background-color: #ff5629;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* update size on mobile */

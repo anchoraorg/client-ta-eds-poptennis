@@ -1,10 +1,11 @@
-
 /* section learn */
 
 main .section.learn {
-    padding: 0;
-    padding-bottom: 40px;
-    background-color: #FF5629;
-  }
-  
-  
+  padding: 60px 0;
+  background-color: #ff5629;
+}
+
+main .section.learn .columns-2-cols > div > div:first-child * {
+  width: 399.46px;
+}
+

@@ -1,9 +1,39 @@
 /* section about */
 
 main .section.about {
-    padding: 0;
-    padding-bottom: 40px;
-    background-color: #FF5629;
-  }
-  
-  
+  padding: 0;
+  padding-bottom: 40px;
+  background-color: #ff5629;
+  padding: 60px 0;
+  position: relative;
+}
+
+main .section.about .content-wrapper {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+main .section.about .columns-img-col {
+  max-width: 399.46px;
+  position: relative;
+}
+
+main .section.about .columns-2-cols div {
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+   */
+}
+
+main .section.about .columns-2-cols div div:last-child {
+  padding-left: 8.5%;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
