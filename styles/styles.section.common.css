@@ -8,6 +8,7 @@
     display: block !important;
     clear: both !important;
     background-image: none !important;
+    height: 0px;
   }  
 
   main *::before {
@@ -16,6 +17,7 @@
     clear: both !important;
     background-image: none !important;
     background-color: unset !important;
+    height: 0px;
   }
 }
 

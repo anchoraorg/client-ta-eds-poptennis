@@ -153,10 +153,19 @@ h6 {
 }
 
 @media (width <= 900px) {
+  h6 { 
+    font-size: 19px;
+  }
   h2 {
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 700;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
   }
 }
 
@@ -277,30 +286,30 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 64px 25px;
 }
 
-@media (width >= 600px) {
+@media (width >= 900px) {
   main .section {
-    /* padding: 64px 32px; */
+    padding: 64px 25px;
   }
 }
 
-@media (width <= 600px) {
+@media (width <= 900px) {
   main .section .columns-wrapper {
-      max-width: 650px;
-      padding-left: 25px;
-      padding-right: 25px;
+    max-width: 650px;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
-@media (width >= 600px) {
+@media (width >= 900px) {
   main .section .columns-wrapper {
     padding-right: 60px;
-      padding-left: 60px;
-      margin-right: auto;
-      margin-left: auto;
-      max-width: 1440px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
   }
 }
 

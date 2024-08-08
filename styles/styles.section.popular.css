@@ -1,7 +1,7 @@
 
 /* section popular */
 main .section.popular {
-  /* padding: 0; */
+  /* padding: 64px 25px; */
 }
 
 main .section.popular h3 {
@@ -10,9 +10,32 @@ main .section.popular h3 {
 
 main .section.popular .columns-2-cols div div:first-child {
   padding-right: 8.5%;
-  max-width: 60%;
 }
+
+
+
 
 main .section.popular .columns-2-cols > div .columns-img-col {
   max-width: 398px;
+}
+
+@media (width >= 900px) {
+  main .section.popular .columns-2-cols div div:first-child {
+    max-width: 60%;
+  }  
+}
+@media (width <= 900px) {
+  main .section.popular .columns-2-cols div div {
+    width: 100%;
+  }  
+
+  main .section.popular {
+    padding: 25px;
+  }
+  main .section.popular .columns-2-cols > div .columns-img-col {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  
 }

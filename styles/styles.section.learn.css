@@ -1,8 +1,15 @@
 /* section learn */
 
 main .section.learn {
-  padding: 60px 0;
+  padding: 60px 25px;
   background-color: #ff5629;
+}
+
+/*reverse order*/
+@media (width <= 900px) {
+  main .section.learn .columns-2-cols > div  {
+    flex-direction: column;
+  }  
 }
 
 main .section.learn .columns-2-cols > div > div:first-child * {

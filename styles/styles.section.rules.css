@@ -44,7 +44,7 @@ main .section.rules h4 {
   line-height: 1.2;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  /* font-size: 30px; */
   margin-bottom: 20px;
 }
 
@@ -80,4 +80,41 @@ main .section.rules .columns-2-cols div div:last-child {
   -ms-flex-order: 2;
   order: 2;
   color: #000;
+}
+
+@media (width <= 900px) {
+  main .section.rules {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main .section.rules .columns-2-cols div div:last-child {
+    padding: 0px;
+  }
+  main .section.rules .columns-img-col {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  main .section.rules .columns-2-cols > div > div:first-child * {
+    width: 100%;
+  }
+}
+
+@media (width <= 900px) {
+  main .section.rules::after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+    height: 0px;
+  }  
+
+  main .section.rules::before {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+    background-color: unset !important;
+    height: 0px;
+  }
 }

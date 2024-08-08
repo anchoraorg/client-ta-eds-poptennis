@@ -35,6 +35,28 @@ main .section.court::after {
   background-position: center;
 }
 
+@media (width <= 900px) {
+  main .section.court {
+    padding-bottom: 30px;
+  }
+  main .section.court::after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+    height: 0px;
+  }  
+
+  main .section.court::before {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+    background-image: none !important;
+    background-color: unset !important;
+    height: 0px;
+  }
+}
+
 
 main .section.court h3 {
   color: #FF5629;
@@ -45,7 +67,7 @@ main .section.court h4 {
   line-height: 1.2;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  /* font-size: 30px; */
   margin-bottom: 20px;
 }
 

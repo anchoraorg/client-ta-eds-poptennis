@@ -1,11 +1,17 @@
 /* section about */
 
 main .section.about {
-  padding: 0;
+  /* padding: 0; */
   padding-bottom: 40px;
   background-color: #ff5629;
-  padding: 60px 0;
+  padding: 60px 25px;
   position: relative;
+}
+
+@media (width <= 900px) {
+  main .section.about {
+    padding: 30px 25px;
+  }
 }
 
 main .section.about .content-wrapper {

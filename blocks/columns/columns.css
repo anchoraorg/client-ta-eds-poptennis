@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column-reverse;
+  justify-items: center;
 }
 
 .columns img {
