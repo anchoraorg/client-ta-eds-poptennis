@@ -33,7 +33,6 @@ main .section.about .columns-2-cols div div:last-child {
 }
 
 @media (width <= 900px) {
-
   main .section.about .columns-2-cols div {
     align-items: center;
   }
