@@ -7,3 +7,12 @@ main .section.popular {
 main .section.popular h3 {
   text-transform: none;
 }
+
+main .section.popular .columns-2-cols div div:first-child {
+  padding-right: 8.5%;
+  max-width: 60%;
+}
+
+main .section.popular .columns-2-cols > div .columns-img-col {
+  max-width: 398px;
+}

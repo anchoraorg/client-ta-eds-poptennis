@@ -78,6 +78,10 @@ main .section.court .columns-2-cols > div > div:first-child * {
   width: 399.46px;
 }
 
+main .section.court .columns-2-cols > div > div:first-child img {
+  border-radius: 24px;
+}
+
 main .section.court .columns-2-cols > div > div:last-child {
   padding-left: 8.5%;
   -webkit-box-ordinal-group: 3;

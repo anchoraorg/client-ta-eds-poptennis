@@ -37,3 +37,37 @@ main .section.about .columns-2-cols div div:last-child {
   -ms-flex-order: 2;
   order: 2;
 }
+@media (width <= 900px) {
+
+  main .section.about .columns-2-cols div div:last-child {
+    padding-left: 0;
+  }
+  
+  main .section.about .columns-2-cols div div:last-child p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  
+  main .section.about .columns-2-cols div div:last-child p:last-child {
+    margin-bottom: 0px;
+  }
+  
+  main .section.about .columns-2-cols div div:last-child h6 {
+    font-size: 19px;
+  }
+  
+  main .section.about .columns-2-cols div div:last-child h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+    
+  main .section.about .columns-2-cols div {
+    align-items: center;
+  }
+  
+  main .section.about .columns-2-cols .columns-img-col img {
+    height: 291px;
+  }
+  
+}
