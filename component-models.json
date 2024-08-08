@@ -293,43 +293,108 @@
   },
   {
     "id": "accordion",
-    "fields": []
+    "fields": [
+      {
+        "component": "multiselect",
+        "valueType": "string",
+        "name": "classes",
+        "value": "",
+        "label": "Block Options",
+        "options": [
+          {
+            "name": "With Image",
+            "value": "image"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "accordion_heading",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "accordion_headingType",
+        "value": "h1",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "accordion-item",
     "fields": [
       {
-        "component": "richtext",
+        "component": "reference",
         "valueType": "string",
-        "name": "heading",
+        "name": "fileReference",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "accordion_title",
         "value": "",
-        "label": "Heading"
+        "label": "Text"
       },
       {
         "component": "select",
+        "name": "accordion_titleType",
+        "value": "h1",
+        "label": "Type",
         "valueType": "string",
-        "name": "headingType",
-        "value": "h3",
-        "label": "Heading Type",
         "options": [
           {
-            "name": "H2",
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
             "value": "h2"
           },
           {
-            "name": "H3",
+            "name": "h3",
             "value": "h3"
           },
           {
-            "name": "H4",
+            "name": "h4",
             "value": "h4"
           },
           {
-            "name": "H5",
+            "name": "h5",
             "value": "h5"
           },
           {
-            "name": "H6",
+            "name": "h6",
             "value": "h6"
           }
         ]
@@ -337,9 +402,9 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "body",
+        "name": "accordion_description",
         "value": "",
-        "label": "Body"
+        "label": "Description"
       }
     ]
   },
