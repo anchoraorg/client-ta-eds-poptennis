@@ -24,6 +24,7 @@ main .section.popular .columns-2-cols > div .columns-img-col {
     max-width: 60%;
   }  
 }
+
 @media (width <= 900px) {
   main .section.popular .columns-2-cols div div {
     width: 100%;
@@ -32,6 +33,7 @@ main .section.popular .columns-2-cols > div .columns-img-col {
   main .section.popular {
     padding: 25px;
   }
+
   main .section.popular .columns-2-cols > div .columns-img-col {
     text-align: center;
     width: 100%;

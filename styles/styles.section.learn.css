@@ -5,7 +5,7 @@ main .section.learn {
   background-color: #ff5629;
 }
 
-/*reverse order*/
+/* reverse order */
 @media (width <= 900px) {
   main .section.learn .columns-2-cols > div  {
     flex-direction: column;

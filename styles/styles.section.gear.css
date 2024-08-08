@@ -2,7 +2,6 @@
 /* section gear */
 main .section.gear {
     background-color: #FF5629;
-    padding: 0;
     text-align: center;
     position: relative;
     padding: 60px 0;
@@ -25,7 +24,7 @@ main .section.gear {
     margin: 0 auto;
   }
 
-  main .section.gear:after {
+  main .section.gear::after {
     content: '';
     position: absolute;
     bottom: 3px;
@@ -38,7 +37,6 @@ main .section.gear {
 
   
   main .section.gear h2 {
-    color: #FF5629;
     max-width: 100%;
     color: #E6FF00;
     margin-bottom: 60px;

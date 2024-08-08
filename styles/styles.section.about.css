@@ -1,8 +1,6 @@
 /* section about */
 
 main .section.about {
-  /* padding: 0; */
-  padding-bottom: 40px;
   background-color: #ff5629;
   padding: 60px 25px;
   position: relative;
@@ -27,24 +25,19 @@ main .section.about .columns-img-col {
   position: relative;
 }
 
-main .section.about .columns-2-cols div {
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-   */
-}
-
 main .section.about .columns-2-cols div div:last-child {
   padding-left: 8.5%;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
 }
+
 @media (width <= 900px) {
 
+  main .section.about .columns-2-cols div {
+    align-items: center;
+  }
+  
   main .section.about .columns-2-cols div div:last-child {
     padding-left: 0;
   }
@@ -56,7 +49,7 @@ main .section.about .columns-2-cols div div:last-child {
   }
   
   main .section.about .columns-2-cols div div:last-child p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   
   main .section.about .columns-2-cols div div:last-child h6 {
@@ -67,11 +60,7 @@ main .section.about .columns-2-cols div div:last-child {
     font-size: 28px;
     margin-bottom: 16px;
   }
-    
-  main .section.about .columns-2-cols div {
-    align-items: center;
-  }
-  
+
   main .section.about .columns-2-cols .columns-img-col img {
     height: 291px;
   }

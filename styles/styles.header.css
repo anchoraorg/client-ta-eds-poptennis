@@ -9,7 +9,7 @@ header {
   transition: all 0.3s ease;
   z-index: 1000;
   background-color: #ff5629;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 /* update size on mobile */
@@ -17,16 +17,21 @@ header {
   header {
     height: 75px;
   }
+
   header .nav-wrapper {
     /* max-width: 650px; */
+
     /* padding-left: 25px !important; */
+
     /* padding-right: 25px !important; */
+
     /* margin-top: 75px; */
   }
 }
 
 header .nav-wrapper {
   /* padding-right: 28px; */
+
   /* padding-left: 25px; */
   margin-right: auto;
   margin-left: auto;
@@ -36,6 +41,7 @@ header .nav-wrapper {
 
 header.header-wrapper {
   /* padding-right: 25px; */
+
   /* padding-left: 25px; */
   max-width: 100%;
 }
@@ -43,7 +49,9 @@ header.header-wrapper {
 header.header-wrapper .header.block {
   height: 100%;
   width: 100%;
+
   /* padding-right: 25px; */
+
   /* padding-left: 25px; */
 }
 
@@ -70,6 +78,7 @@ header nav .nav-sections {
 
 header nav {
   display: flex !important;
+
   /* flex-direction: row-reverse !important; */
   justify-content: space-between;
   width: 100% !important;

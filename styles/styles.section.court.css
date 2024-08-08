@@ -39,12 +39,13 @@ main .section.court::after {
   main .section.court {
     padding-bottom: 30px;
   }
+
   main .section.court::after {
     content: "" !important;
     display: block !important;
     clear: both !important;
     background-image: none !important;
-    height: 0px;
+    height: 0;
   }  
 
   main .section.court::before {
@@ -53,7 +54,7 @@ main .section.court::after {
     clear: both !important;
     background-image: none !important;
     background-color: unset !important;
-    height: 0px;
+    height: 0;
   }
 }
 
@@ -65,8 +66,9 @@ main .section.court h3 {
 main .section.court h4 {
   color: #003953;
   line-height: 1.2;
-  font-family: "Archivo", sans-serif;
+  font-family: Archivo, sans-serif;
   font-weight: 700;
+
   /* font-size: 30px; */
   margin-bottom: 20px;
 }
@@ -74,16 +76,18 @@ main .section.court h4 {
 main .section.court h6 {
   color: #000;
 }
+
 main .section.court ul {
   padding: 0;
   margin: 0;
   padding-bottom: 25px;
   margin-left: 25px;
 }
+
 main .section.court ul:last-child {
   padding: 0;
   margin: 0;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-left: 25px;
 }
 

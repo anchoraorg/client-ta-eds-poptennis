@@ -82,6 +82,7 @@ footer .footer.block .section.bottomrow p {
   position: relative;
   font-size: 12px;
 }
+
 footer .footer.block .section.bottomrow .columns-2-cols {
   width: 100%;
 }
@@ -89,7 +90,6 @@ footer .footer.block .section.bottomrow .columns-2-cols {
 footer .footer.block .section.bottomrow .columns-2-cols > div > div:last-child {
   background-color: #E6FF00;
   color: #001F3D;
-  position: relative;
   font-size: 12px;
   max-width: 100%;
   width: 100%;
@@ -106,15 +106,12 @@ footer .footer.block .section.bottomrow .columns-2-cols > div > div:last-child p
 }
 
 footer .footer.block .section.bottomrow .columns-2-cols div:last-child a.button:any-link {
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
   transition: all .5s ease;
-  color: #E6FF00;
   background-color: #001F3D;
   font-size: 36px;
   width: 56px !important;
   height: 56px  !important;
-  padding: 0px;
+  padding: 0;
   min-width: 56px;
   min-height: 56px;
   margin-left: 0;
@@ -125,10 +122,12 @@ footer .footer.block .section.bottomrow .columns-2-cols div:last-child a.button:
   align-items: center;
   justify-content: center;
 }
+
 footer .footer.block .section.bottomrow .columns-2-cols div:last-child .icon {
   height: 40px;
   width: 40px;
 }
+
 footer .footer.block .section.bottomrow .columns-2-cols div:last-child a.button:any-link img {
   height: 40px;
   width: 40px;

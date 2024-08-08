@@ -8,7 +8,7 @@ main .section.teaser {
 
 @media (width <= 900px) {
   main .section.teaser {
-    padding: 0px 25px;
+    padding: 0 25px;
   }
 }
 

@@ -42,8 +42,9 @@ main .section.rules h3 {
 main .section.rules h4 {
   color: #003953;
   line-height: 1.2;
-  font-family: "Archivo", sans-serif;
+  font-family: Archivo, sans-serif;
   font-weight: 700;
+
   /* font-size: 30px; */
   margin-bottom: 20px;
 }
@@ -51,16 +52,18 @@ main .section.rules h4 {
 main .section.rules h6 {
   color: #000;
 }
+
 main .section.rules ul {
   padding: 0;
   margin: 0;
   padding-bottom: 25px;
   margin-left: 25px;
 }
+
 main .section.rules ul:last-child {
   padding: 0;
   margin: 0;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-left: 25px;
 }
 
@@ -87,14 +90,17 @@ main .section.rules .columns-2-cols div div:last-child {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   main .section.rules .columns-2-cols div div:last-child {
-    padding: 0px;
+    padding: 0;
   }
+
   main .section.rules .columns-img-col {
     width: 100%;
     max-width: 100%;
     text-align: center;
   }
+
   main .section.rules .columns-2-cols > div > div:first-child * {
     width: 100%;
   }
@@ -106,7 +112,7 @@ main .section.rules .columns-2-cols div div:last-child {
     display: block !important;
     clear: both !important;
     background-image: none !important;
-    height: 0px;
+    height: 0;
   }  
 
   main .section.rules::before {
@@ -115,6 +121,6 @@ main .section.rules .columns-2-cols div div:last-child {
     clear: both !important;
     background-image: none !important;
     background-color: unset !important;
-    height: 0px;
+    height: 0;
   }
 }

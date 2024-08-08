@@ -8,7 +8,7 @@
     display: block !important;
     clear: both !important;
     background-image: none !important;
-    height: 0px;
+    height: 0;
   }  
 
   main *::before {
@@ -17,7 +17,7 @@
     clear: both !important;
     background-image: none !important;
     background-color: unset !important;
-    height: 0px;
+    height: 0;
   }
 }
 
@@ -26,5 +26,5 @@ p {
   padding: 0;
   margin-bottom: 16px;
   line-height: 1.6;
-  fonts: 18px;
+  font-size: 18px;
 }
