@@ -1,1 +1,37 @@
 /* faq */
+
+main .section.faq {
+  background-color: #ff5629;
+  padding: 60px 25px;
+  position: relative;
+}
+
+
+@media (width <= 900px) {
+  main .section.faq {
+    padding: 30px 25px;
+  }
+}
+
+main .section.faq .default-content-wrapper {
+  margin-bottom: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+main .section.faq .accordion-wrapper {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+
+main .section.faq h3 em {
+  color: #fff;
+}
+
