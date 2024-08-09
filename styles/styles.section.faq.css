@@ -35,8 +35,9 @@ main .section.faq h3 em {
   main .section.faq {
     padding: 30px 25px;
   }
+
   main .section.faq .default-content-wrapper,
   main .section.faq .accordion-wrapper {
-    padding: 0px;
+    padding: 0;
   }
 }

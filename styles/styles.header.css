@@ -268,6 +268,7 @@ header nav[aria-expanded='true'] .section.menu ul:last-child .button-container a
     margin-left: auto !important;
     vertical-align: middle !important;
   }
+
   header nav[aria-expanded='true'] .section.menu {
     padding: 0;
     height: 110px !important;
@@ -275,37 +276,39 @@ header nav[aria-expanded='true'] .section.menu ul:last-child .button-container a
     align-items: center !important;
     vertical-align: middle !important;
   }
+
   header nav .nav-sections ul {
     height: 110px;
     align-items: center;
     vertical-align: middle;
     justify-content: start;
   }
+
   header nav .nav-sections ul li {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   header nav[aria-expanded='true'] .section.menu ul:first-child  {
-    padding: 0px !important;
-    margin: 0px !important;  
+    padding: 0 !important;
+    margin: 0 !important;  
   }
 
   header nav[aria-expanded='true'] .section.menu ul:first-child li {
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
     height: 100%;
-    vertical-align: middle;
+
     /* display: flex; */
-    justify-content: center;
+    place-content: center center;
     align-items: center;
     vertical-align: middle;
-    align-content: center;
   }
 
   header nav[aria-expanded='true'] .section.menu ul:first-child li a {
-    padding: 0px !important;
-    margin: 0px !important;  
+    padding: 0 !important;
+    margin: 0 !important;  
+
     /* height: 100%; */
     vertical-align: middle;
     line-height: 1;
