@@ -17,6 +17,7 @@ function hasWrapper(el) {
 export default function decorate(block) {
   const accordionUUID = `accordion-${generateUUID()}`;
   block.setAttribute('id', accordionUUID);
+  console.log(block);
   [...block.children].forEach((row) => {
     const itemTitle = row.querySelector(':scope > div > h5');
 
@@ -48,6 +49,15 @@ export default function decorate(block) {
     const details = document.createElement('details');
     details.className = 'accordion-item';
     details.append(summary, body);
+
+    details.addEventListener('click', () => {
+      block.querySelectorAll('.accordion-item').forEach((item) => {
+        if (item !== details) {
+          item.removeAttribute('open');
+        }
+      });
+    });
+
     row.replaceWith(details);
   });
 }
