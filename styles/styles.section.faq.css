@@ -42,17 +42,13 @@ main .section.faq h3 em {
   }
 }
 
-main .section.faq .accordion details[open] summary::after {
-  transform: translateY(-50%) rotate(90deg);
-}
+
 main .section.faq .accordion details summary::after {
   content: '';
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(0);
-  -ms-transform: translateY(-50%) rotate(0);
   transform: translateY(-50%) rotate(0);
-  right: 0px;
+  right: 0;
   z-index: 100;
   display: inline-block;
   color: transparent;
@@ -61,13 +57,15 @@ main .section.faq .accordion details summary::after {
   pointer-events: none;
   width: 48px;
   height: 27px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQwLjE4NCAyLjA5MkwyMS4wOTIgMjEuMTg0IDIgMi4wOTIiIHN0cm9rZT0iI0U2RkYwMCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDMiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQwLjE4NCAyLjA5MkwyMS4wOTIgMjEuMTg0IDIgMi4wOTIiIHN0cm9rZT0iI0U2RkYwMCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+main .section.faq .accordion details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 main .section.faq .accordion details summary {
@@ -79,9 +77,10 @@ main .section.faq .accordion details summary {
 
 
 main .section.faq .accordion .accordion-item {
-  border: 0px;
+  border: 0;
   border-bottom: 1px solid #fff;
 }
+
 main .section.faq .accordion .accordion-item .accordion-item-label p {
   padding-bottom: 0%;
   margin-bottom: 0%;
@@ -97,8 +96,6 @@ main .section.faq .accordion details summary:hover {
 }
 
 main .section.faq .accordion details[open] .accordion-item-body {
-  border-top: 0px;
-  padding-left: 0%;
   padding: 0 50px 15px 0;
   background-color: transparent;
   border-top: 0;

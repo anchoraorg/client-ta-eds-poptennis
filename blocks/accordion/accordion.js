@@ -4,15 +4,7 @@
  * https://www.hlx.live/developer/block-collection/accordion
  */
 
-import {
-  div, h2, input, label, span,
-} from '../../scripts/dom-builder.js';
 import { generateUUID } from '../../scripts/scripts.js';
-import { decorateIcons } from '../../scripts/aem.js';
-
-function hasWrapper(el) {
-  return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
-}
 
 export default function decorate(block) {
   const accordionUUID = `accordion-${generateUUID()}`;
