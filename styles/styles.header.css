@@ -71,7 +71,7 @@ header nav .nav-sections {
   font-weight: 700;
   color: #e6ff00;
   font-size: 16px;
-  line-height: 110px;
+  /* line-height: 110px; */
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -93,6 +93,7 @@ header nav {
     padding-left: 25px !important;
     padding-right: 25px !important;
     width: 100% !important;
+    margin-right: 25px !important;
   }
 
   header nav .nav-brand img {
@@ -103,13 +104,23 @@ header nav {
 header nav .nav-hamburger {
   grid-area: hamburger;
   width: fit-content;
-  width: 25px;
+  width: 25px !important;
+  max-width: 25px !important;
+  min-width: 25px !important;
   height: 20px;
   z-index: 250;
   position: relative;
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+header nav .nav-hamburger button {
+  width: 25px !important;
+  min-width: 25px !important;
+}
+header nav .nav-hamburger-icon {
+  color: #e6ff00 !important;
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon,
@@ -152,12 +163,83 @@ header nav ul:last-child {
   }
 }
 
+header nav[aria-expanded='true'] .section.menu {
+  /* max-height: fit-content; */
+  /* height: calc(100vh - 68px); */
+  /* display: none; */
+  text-align: center;
+  padding: 20px 25px 140px 25px;
+}
+header nav[aria-expanded='true'] .section.menu a {
+  line-height: 1.1;
+  height: 30px;
+  font-size: 18px;
+}
+
+
+header nav[aria-expanded='true'] .section.menu ul li {
+  line-height: 1.1;
+  height: 30px;
+  font-size: 18px;
+}
+
 header nav[aria-expanded='true'] {
-  display: grid;
+  display: grid !important;
   grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+    "brand . hamburger"
+    "sections sections sections" !important;
+  grid-template-rows: 75px 1fr !important;
+  margin-right: 25px !important;
   overflow-y: auto;
+  /* flex-direction: column !important; */
   min-height: 100vh;
+}
+
+
+header nav[aria-expanded='true'] .section.menu ul:last-child {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:last-child li {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:first-child li {
+  margin-bottom: 15px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:last-child li p {
+  width: 50px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:last-child li p a{
+  width: 50px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:last-child .button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 50px;
+}
+
+header nav[aria-expanded='true'] .section.menu ul:last-child .button-container a.button  {
+  line-height: 1;
+  padding: 5px;
+  vertical-align: middle;
+  width: 50px !important;
+  max-width: 50px;
+  font-size: 18px;
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
