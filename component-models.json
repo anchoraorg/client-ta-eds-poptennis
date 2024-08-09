@@ -262,10 +262,9 @@
     "fields": [
       {
         "component": "text",
+        "valueType": "string",
         "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string"
+        "label": "Style"
       },
       {
         "component": "text",
@@ -284,6 +283,12 @@
   {
     "id": "video",
     "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "style",
+        "label": "Style"
+      },
       {
         "component": "text",
         "valueType": "string",
