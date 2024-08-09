@@ -28,21 +28,6 @@ main .section.faq h3 em {
   color: #fff;
 }
 
-
-
-
-@media (width <= 900px) {
-  main .section.faq {
-    padding: 30px 25px;
-  }
-
-  main .section.faq .default-content-wrapper,
-  main .section.faq .accordion-wrapper {
-    padding: 0;
-  }
-}
-
-
 main .section.faq .accordion details summary::after {
   content: '';
   position: absolute;
@@ -102,3 +87,18 @@ main .section.faq .accordion details[open] .accordion-item-body {
   max-width: 750px;
 }
 
+@media (width <= 900px) {
+  main .section.faq {
+    padding: 30px 25px;
+  }
+
+  main .section.faq .default-content-wrapper,
+  main .section.faq .accordion-wrapper {
+    padding: 0;
+  }
+
+  main .section.faq .accordion details summary::after {
+    width: 25px;
+    height: 15px;
+  }
+}
