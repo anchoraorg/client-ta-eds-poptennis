@@ -43,7 +43,7 @@ main .section.teaser .columns-wrapper {
 }
 
 main .section.teaser img {
-  height: 100%;
+  /* height: 100%; */
   width: auto;
 }
 
