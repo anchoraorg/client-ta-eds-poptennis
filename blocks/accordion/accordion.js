@@ -4,26 +4,46 @@
  * https://www.hlx.live/developer/block-collection/accordion
  */
 
+import {
+  div, h2, input, label, span,
+} from '../../scripts/dom-builder.js';
+import { generateUUID } from '../../scripts/scripts.js';
+import { decorateIcons } from '../../scripts/aem.js';
+
 function hasWrapper(el) {
   return !!el.firstElementChild && window.getComputedStyle(el.firstElementChild).display === 'block';
 }
 
 export default function decorate(block) {
+  const accordionUUID = `accordion-${generateUUID()}`;
+  block.setAttribute('id', accordionUUID);
   [...block.children].forEach((row) => {
-    // decorate accordion item label
-    const label = row.children[0];
+    const itemTitle = row.querySelector(':scope > div > h5');
+
+    // is title for the accordion
+    const isTitle = itemTitle && itemTitle.getAttribute('id') === 'title';
+    if (isTitle) {
+      row.remove();
+      return;
+    }
+
+    // get title and content
+    const title = itemTitle.innerHTML;
+
+    const paragraphs = Array.from(row.querySelector(':scope > div:nth-child(2)').children).slice(1);
+
     const summary = document.createElement('summary');
     summary.className = 'accordion-item-label';
-    summary.append(...label.childNodes);
-    if (!hasWrapper(summary)) {
-      summary.innerHTML = `<p>${summary.innerHTML}</p>`;
-    }
+    summary.innerHTML = `<p>${title}</p>`;
+
     // decorate accordion item body
-    const body = row.children[1];
+    const body = document.createElement('div');
     body.className = 'accordion-item-body';
-    if (!hasWrapper(body)) {
-      body.innerHTML = `<p>${body.innerHTML}</p>`;
-    }
+    // for each paragraph, append to body
+    [...paragraphs].forEach((paragraph) => {
+      body.appendChild(paragraph);
+    });
+
     // decorate accordion item
     const details = document.createElement('details');
     details.className = 'accordion-item';
