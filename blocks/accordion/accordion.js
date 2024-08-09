@@ -17,7 +17,6 @@ function hasWrapper(el) {
 export default function decorate(block) {
   const accordionUUID = `accordion-${generateUUID()}`;
   block.setAttribute('id', accordionUUID);
-  console.log(block);
   [...block.children].forEach((row) => {
     const itemTitle = row.querySelector(':scope > div > h5');
 
