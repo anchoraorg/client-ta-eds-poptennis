@@ -2,6 +2,15 @@
 
 main .section.contactus {
   position: relative;
+  padding-top: 60px;
+}
+
+main .section.contactus .content-wrapper {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
 }
 
 main .section.contactus::after {
