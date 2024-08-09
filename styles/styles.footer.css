@@ -87,18 +87,27 @@ footer .footer.block .section.bottomrow .columns-2-cols {
   width: 100%;
 }
 
+@media (width <= 900px) {
+  footer .footer.block .section.bottomrow .columns-2-cols > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
 footer .footer.block .section.bottomrow .columns-2-cols > div > div:last-child {
   background-color: #E6FF00;
   color: #001F3D;
   font-size: 12px;
-  max-width: 100%;
-  width: 100%;
+  max-width: fit-content;
   align-items: end;
   position: relative;
   display: flex;
   justify-content: flex-end;
   gap: 16px;
 }
+
 
 footer .footer.block .section.bottomrow .columns-2-cols > div > div:last-child p {
   width: 56px;

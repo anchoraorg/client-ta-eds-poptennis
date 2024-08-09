@@ -71,6 +71,7 @@ header nav .nav-sections {
   font-weight: 700;
   color: #e6ff00;
   font-size: 16px;
+
   /* line-height: 110px; */
   text-transform: uppercase;
   text-decoration: none;
@@ -119,6 +120,7 @@ header nav .nav-hamburger button {
   width: 25px !important;
   min-width: 25px !important;
 }
+
 header nav .nav-hamburger-icon {
   color: #e6ff00 !important;
 }
@@ -165,11 +167,14 @@ header nav ul:last-child {
 
 header nav[aria-expanded='true'] .section.menu {
   /* max-height: fit-content; */
+
   /* height: calc(100vh - 68px); */
+
   /* display: none; */
   text-align: center;
-  padding: 20px 25px 140px 25px;
+  padding: 20px 25px 140px;
 }
+
 header nav[aria-expanded='true'] .section.menu a {
   line-height: 1.1;
   height: 30px;
@@ -191,6 +196,7 @@ header nav[aria-expanded='true'] {
   grid-template-rows: 75px 1fr !important;
   margin-right: 25px !important;
   overflow-y: auto;
+
   /* flex-direction: column !important; */
   min-height: 100vh;
 }
