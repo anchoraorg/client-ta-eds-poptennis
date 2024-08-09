@@ -4,20 +4,20 @@
 /* remove all section image effects */
 @media (width <= 900px) {
   main *::after {
-    content: "" !important;
+    /* content: "" !important;
     display: block !important;
     clear: both !important;
     background-image: none !important;
-    height: 0;
+    height: 0; */
   }  
 
   main *::before {
-    content: "" !important;
+    /* content: "" !important;
     display: block !important;
     clear: both !important;
     background-image: none !important;
     background-color: unset !important;
-    height: 0;
+    height: 0; */
   }
 }
 
