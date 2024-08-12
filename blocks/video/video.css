@@ -85,15 +85,15 @@
   overflow: hidden;
 }
 
-.block.video .video-placeholder-play > button {
+.block.video .video-placeholder picture::before {
   opacity: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
   transition: all .3s ease;
   content: '';
-  position: relative;
+  position: absolute;
   width: 152px;
   height: 152px;
-  max-width: 152px;
-  padding: 0;
   z-index: 100;
   display: block;
   top: 50%;
@@ -102,9 +102,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  border: 0;
-  background-color: transparent;
 }
 
 .block.video .block.video-placeholder picture img {
