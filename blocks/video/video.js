@@ -108,7 +108,7 @@ const loadVideoEmbed = (block, link, autoplay, background) => {
 
 export default function decorate(block) {
   block.classList.add('video');
-  // console.log('decorating video block');
+  console.log('decorating video block');
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
   block.textContent = '';

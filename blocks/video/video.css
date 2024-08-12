@@ -1,30 +1,30 @@
-.video {
+.block.video {
   text-align: center;
   max-width: 900px;
   margin: 24px auto;
 }
 
-.video[data-embed-loaded='false']:not(.placeholder) {
+.block.video[data-embed-loaded='false']:not(.placeholder) {
   /* reserve an approximate space to avoid extensive layout shifts */
   aspect-ratio: 16 / 9;
 }
 
-.video > div {
+.block.video > div {
   display: flex;
   justify-content: center;
 }
 
-.video video {
+.block.video video {
   max-width: 100%;
 }
 
-.video .video-placeholder {
+.block.video .block.video-placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;
   position: relative;
 }
 
-.video .video-placeholder > * {
+.block.video .block.video-placeholder > * {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,20 +32,20 @@
   inset: 0;
 }
 
-.video[data-embed-loaded='true'] .video-placeholder,
-.video[data-embed-loaded='false'] .video-placeholder + * {
+.block.video[data-embed-loaded='true'] .block.video-placeholder,
+.block.video[data-embed-loaded='false'] .block.video-placeholder + * {
   visibility: hidden;
   height: 0;
   width: 0;
 }
 
-.video .video-placeholder picture img {
+.block.video .block.video-placeholder picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.video .video-placeholder-play button {
+.block.video .block.video-placeholder-play button {
   position: relative;
   display: block;
   width: 44px;
@@ -55,7 +55,7 @@
   padding: 0;
 }
 
-.video .video-placeholder-play button::before {
+.block.video .block.video-placeholder-play button::before {
   content: '';
   display: block;
   box-sizing: border-box;
