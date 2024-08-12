@@ -87,8 +87,8 @@
 
 .block.video .video-placeholder picture::before {
   opacity: 1;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  transition: all .3s ease;
   transition: all .3s ease;
   content: '';
   position: absolute;
@@ -102,8 +102,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
