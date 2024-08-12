@@ -114,6 +114,9 @@ export default function decorate(block) {
   block.textContent = '';
   block.dataset.embedLoaded = false;
 
+  console.log('placeholder', placeholder);
+  console.log('link', link);
+
   const autoplay = block.classList.contains('autoplay');
   if (placeholder) {
     block.classList.add('placeholder');
